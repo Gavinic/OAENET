@@ -1,0 +1,13 @@
+python train.py \
+  --data_dir ./dataset/AffectNet/ \
+  --tensornoard_name Cate_7_OAENet\
+  --checkpoints_dir ./checkpoints \
+  --model_name OAENet \
+  --gpu_ids 0,1 \
+  --batch_size 60 \
+  --image_size 224 \
+  --learning_rate 1e-3 \
+  --num_epochs 50 \
+  --num_classes 7 \
+  --n_threads_train 10 \
+  --num_iters_validate 1
