@@ -27,5 +27,4 @@ If you think this work is helpful, please cite
   year={2021},
   publisher={Elsevier}
 }
-}
 ```
