@@ -12,3 +12,20 @@ Facial Expression Recognition (FER) is a challenging yet important research topi
 ## Pipeline
 ![pipeline](https://user-images.githubusercontent.com/1344482/181180943-f48794d7-c499-4919-8f8a-e53eecf3659d.JPG)
 Our network pipeline. (a) input image. (b) weighted mask calculated from oriented gradient. Our network consists of a (c) maintenance branch and (d) attention branch, in which (c) consists of several inverted residual and linear bottleneck structures, and (d) is an UNet-like architecture. The maintenance branch takes the original face image as input, and then convolve it to 56 ×56 ×32. The attention branch takes the weighted mask as input. Through downsampling and upsampling, the size of final feature map is also 56 ×56 ×32. The feature map from two branches is fused by depthwise product. (e) is the stackblock that consists of several CNN blocks to produce the final score (f)
+
+
+## Citations
+If you think this work is helpful, please cite
+
+```
+@article{wang2021oaenet,
+  title={OAENet: Oriented attention ensemble for accurate facial expression recognition},
+  author={Wang, Zhengning and Zeng, Fanwei and Liu, Shuaicheng and Zeng, Bing},
+  journal={Pattern Recognition},
+  volume={112},
+  pages={107694},
+  year={2021},
+  publisher={Elsevier}
+}
+}
+```
