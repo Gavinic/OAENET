@@ -53,3 +53,15 @@ pip install -r requirements.txt
   ```
   python train.py
   ```
+ 
+ ## Inference
+  * For inference, you need to modify the parameter with your own image/model path：
+   ```
+  self.data_dir = "xxx"  # image floder
+  self.model_path = 'xxx'  # model path   xxx.pth
+
+  ```
+  Then you can use the following command for inference:
+   ```
+  python test.py
+  ```
