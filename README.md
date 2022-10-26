@@ -28,3 +28,17 @@ If you think this work is helpful, please cite
   publisher={Elsevier}
 }
 ```
+
+## Installation
+* Download the source code by
+```
+git clone https://github.com/Gavinic/OAENET.git
+cd OAENET
+}
+```
+
+* Install the package
+```
+pip install -r requirements.txt
+}
+```
