@@ -34,11 +34,22 @@ If you think this work is helpful, please cite
 ```
 git clone https://github.com/Gavinic/OAENET.git
 cd OAENET
-}
 ```
 
 * Install the package
 ```
+conda create -n OAENET python=3.8
+conda activate OAENET
 pip install -r requirements.txt
-}
 ```
+## Training
+  * datasets 
+  You need to download the facial expression dataset AffectNet,Ck+, RAF-DB from the public official website. then the images for traing should be organized   in the following format:
+  ```
+  xxx.jpg\tlabel
+  ```
+  label: 0, 1, 2, 3, 4, 5, 6, 7; which represent diffenent facial expression: 'surprise', 'fear', 'disgust', 'happy', 'sad', 'angry', 'neutral'.
+  * strat training:
+  ```
+  python train.py
+  ```
